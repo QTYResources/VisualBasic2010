@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Basic Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomControls", "CustomControls.vbproj", "{8788B217-2FD4-4A9E-A3FC-3B60C7D0A692}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8788B217-2FD4-4A9E-A3FC-3B60C7D0A692}.Debug|x86.ActiveCfg = Debug|x86
+		{8788B217-2FD4-4A9E-A3FC-3B60C7D0A692}.Debug|x86.Build.0 = Debug|x86
+		{8788B217-2FD4-4A9E-A3FC-3B60C7D0A692}.Release|x86.ActiveCfg = Release|x86
+		{8788B217-2FD4-4A9E-A3FC-3B60C7D0A692}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
