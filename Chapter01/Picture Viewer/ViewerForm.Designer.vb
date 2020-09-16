@@ -2,7 +2,7 @@
 Partial Class ViewerForm
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
+    'Form 重写 Dispose，以清理组件列表。
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -14,12 +14,12 @@ Partial Class ViewerForm
         End Try
     End Sub
 
-    'Required by the Windows Form Designer
+    'Windows 窗体设计器所必需的
     Private components As System.ComponentModel.IContainer
 
-    'NOTE: The following procedure is required by the Windows Form Designer
-    'It can be modified using the Windows Form Designer.  
-    'Do not modify it using the code editor.
+    '注意: 以下过程是 Windows 窗体设计器所必需的
+    '可以使用 Windows 窗体设计器修改它。  
+    '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ViewerForm))
@@ -27,22 +27,23 @@ Partial Class ViewerForm
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.picShowPicture = New System.Windows.Forms.PictureBox()
         Me.ofdSelectPicture = New System.Windows.Forms.OpenFileDialog()
+        CType(Me.picShowPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnSelectPicture
         '
-        Me.btnSelectPicture.Location = New System.Drawing.Point(295, 10)
+        Me.btnSelectPicture.Location = New System.Drawing.Point(275, 10)
         Me.btnSelectPicture.Name = "btnSelectPicture"
-        Me.btnSelectPicture.Size = New System.Drawing.Size(85, 23)
+        Me.btnSelectPicture.Size = New System.Drawing.Size(105, 23)
         Me.btnSelectPicture.TabIndex = 0
         Me.btnSelectPicture.Text = "Select Picture"
         Me.btnSelectPicture.UseVisualStyleBackColor = True
         '
         'btnQuit
         '
-        Me.btnQuit.Location = New System.Drawing.Point(295, 40)
+        Me.btnQuit.Location = New System.Drawing.Point(275, 40)
         Me.btnQuit.Name = "btnQuit"
-        Me.btnQuit.Size = New System.Drawing.Size(85, 23)
+        Me.btnQuit.Size = New System.Drawing.Size(105, 23)
         Me.btnQuit.TabIndex = 1
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
@@ -52,7 +53,7 @@ Partial Class ViewerForm
         Me.picShowPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.picShowPicture.Location = New System.Drawing.Point(8, 8)
         Me.picShowPicture.Name = "picShowPicture"
-        Me.picShowPicture.Size = New System.Drawing.Size(282, 275)
+        Me.picShowPicture.Size = New System.Drawing.Size(248, 272)
         Me.picShowPicture.TabIndex = 2
         Me.picShowPicture.TabStop = False
         '
@@ -63,21 +64,23 @@ Partial Class ViewerForm
         '
         'ViewerForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(384, 287)
+        Me.ClientSize = New System.Drawing.Size(384, 286)
         Me.Controls.Add(Me.picShowPicture)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnSelectPicture)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "ViewerForm"
         Me.Text = "Picture Viewer"
+        Me.TopMost = True
+        CType(Me.picShowPicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents btnSelectPicture As System.Windows.Forms.Button
-    Friend WithEvents btnQuit As System.Windows.Forms.Button
-    Friend WithEvents picShowPicture As System.Windows.Forms.PictureBox
-    Friend WithEvents ofdSelectPicture As System.Windows.Forms.OpenFileDialog
 
+    Friend WithEvents btnSelectPicture As Button
+    Friend WithEvents btnQuit As Button
+    Friend WithEvents picShowPicture As PictureBox
+    Friend WithEvents ofdSelectPicture As OpenFileDialog
 End Class
