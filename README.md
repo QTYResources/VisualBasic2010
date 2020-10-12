@@ -25,10 +25,11 @@ ISBN：0672331136
     01. Picture Viewer                          ===> 简单的图片查看器应用
 
 第2章 Visual Basic 2010导航
-
+    无
 
 第3章 理解对象和集合
-
+    01. Picture Viewer                          ===> 添加缩放窗口和绘制边框功能
+    02. Collections Example                     ===> 演示集合的使用
 
 第4章 理解事件
 
